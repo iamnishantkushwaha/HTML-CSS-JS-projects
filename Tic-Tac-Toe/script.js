@@ -138,9 +138,9 @@ NewGame.addEventListener("click", function () {
 });
 function winningmsg() {
   if (Xscore >= tiesscore && Xscore > Oscore) {
-    turn.innerHTML = `<h1>Congratulations, Player X Won The Game</h1>`;
+    turn.innerHTML = `<h1>Congratulations🎉, Player X Won🏆 The Game</h1>`;
   } else if (Oscore > Xscore) {
-    turn.innerHTML = `<h1>Congratulations, Player O Won The Game</h1>`;
+    turn.innerHTML = `<h1>Congratulations🎉, Player O Won🏆 The Game</h1>`;
   } else {
     turn.innerHTML = `<h1>Game Draw</h1>`;
   }

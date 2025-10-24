@@ -1,68 +1,75 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 
 }
 
-main{
+main {
     height: 100%;
     width: 100%;
-    background-color:#101114;
+    background-color: #101114;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#center-part{
-    height:650px;
+
+#center-part {
+    height: 650px;
     width: 400px;
-    background-color:#151924;
+    background-color: #151924;
     border-radius: 20px;
     transform: perspective(800px) translateZ(20px);
-    
-    
+
+
 }
 
-#center-part1{
-    height:350px;
+#center-part1 {
+    height: 350px;
     width: 400px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     border-radius: 20px;
     transform: perspective(800px) translateZ(20px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
-#center-part1 p{
+
+#center-part1 p {
     padding-top: 20px;
     font-weight: 300;
     font-size: 20px;
-    
+
 }
-#entermatches{
+
+#entermatches {
     height: 30%;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-self: center;
-    
+
 }
-#entermatches #labels{
-    
+
+#entermatches #labels {
+
     width: 100%;
     font-size: 16px;
     font-weight: 400;
 }
-#entermatches input{
-    height:40px;
+
+#entermatches input {
+    height: 40px;
     width: 100%;
     border: 1px solid gray;
     border-radius: 6px;
@@ -70,10 +77,11 @@ main{
     font-size: 25px;
     text-indent: 20px;
 }
-#center-part1 button{
-     padding: 10px 30% 10px 30%;
-     display: flex;
-     justify-self: center;
+
+#center-part1 button {
+    padding: 10px 30% 10px 30%;
+    display: flex;
+    justify-self: center;
     background-color: #5a45de;
     color: white;
     font-size: 17px;
@@ -82,28 +90,29 @@ main{
     border: none;
 }
 
-#headings{
+#headings {
     padding-top: 10px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#gamename{
+
+#gamename {
     color: #7666eb;
     font-size: 40px;
 }
 
-#turnname{
-color:white;
-font-size: 20px;
-font-weight: 400;
-padding-top:10px;
+#turnname {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
 }
 
-#score{
+#score {
     height: 80px;
-    width:80%;
+    width: 80%;
     /* border: 2px solid white; */
     display: grid;
     grid-template-rows: 100%;
@@ -113,45 +122,48 @@ padding-top:10px;
     margin-top: 25px;
 }
 
-#score div{
-       /* border:2px solid white; */
-       border-radius: 15px;
-       background-color: #1b2131;
-      
+#score div {
+    /* border:2px solid white; */
+    border-radius: 15px;
+    background-color: #1b2131;
+
 
 }
 
-#score div h4{
-     font-weight: 300;
-     color: white;
-     text-align: center;
-     margin-top: 5px;
-     font-size: 15px;
-      
+#score div h4 {
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+
 
 }
-#score div h3{
-     
-     color: white;
-     text-align: center;
-     margin-top: 1px;
+
+#score div h3 {
+
+    color: white;
+    text-align: center;
+    margin-top: 1px;
     font-size: 30px;
 
 }
 
-#X h3 span{
+#X h3 span {
     color: #4f6cf2;
 }
-#ties h3 span{
-    color:#875ef1;
-}
-#O h3 span{
-    color:#c7636f;
+
+#ties h3 span {
+    color: #875ef1;
 }
 
-#boxes{
+#O h3 span {
+    color: #c7636f;
+}
+
+#boxes {
     height: 295px;
-    width:295px;
+    width: 295px;
     display: grid;
     grid-template-columns: 25% 25% 25%;
     grid-template-rows: 25% 25% 25%;
@@ -160,63 +172,69 @@ padding-top:10px;
     align-content: space-between;
     margin-top: 20px;
     margin-bottom: 50px;
-    
-}
-.box{
-    height:100px;
-    width: 100px;
-    border-radius:16px;
-    justify-self: center;
-    background-color: #272d3c;
-    border:1px solid #272d3c;
-    box-shadow: 1px 1px  #272d3c,-1px -1px #282828;
-    
-    
+
 }
 
-.box span{
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 16px;
+    justify-self: center;
+    background-color: #272d3c;
+    border: 1px solid #272d3c;
+    box-shadow: 1px 1px #272d3c, -1px -1px #282828;
+
+
+}
+
+.box span {
     /* color: red; */
     font-size: 60px;
     font-weight: 600;
 }
 
-#gamebuttons{
+#gamebuttons {
     height: 45px;
-    width:80%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  /* border:1px solid white; */
-  justify-self: center;
-  
+    /* border:1px solid white; */
+    justify-self: center;
+
 }
-#gamebuttons button:first-child{
-    height:45px;
+
+#gamebuttons button:first-child {
+    height: 45px;
     width: 48%;
-   color: white;
-background: #536DFE;
-background: linear-gradient(242deg, rgba(83, 109, 254, 1) 0%,rgba(131, 95, 246, 1) 100%);
-   border-radius: 9px;
-   font-size: 18px;
-   border-color:#536DFE;
-   box-shadow: 1px 1px 2px #536DFE,-1px -1px 2px #536DFE;
+    color: white;
+    background: #536DFE;
+    background: linear-gradient(242deg, rgba(83, 109, 254, 1) 0%, rgba(131, 95, 246, 1) 100%);
+    border-radius: 9px;
+    font-size: 18px;
+    border-color: #536DFE;
+    box-shadow: 1px 1px 2px #536DFE, -1px -1px 2px #536DFE;
 }
-#gamebuttons button:last-child{
-    height:45px;
+
+#gamebuttons button:last-child {
+    height: 45px;
     width: 48%;
-   color: white;
- 
-background-color: transparent;
-border:2px solid rgba(83, 109, 254, 1);
-font-size: 18px;
-border-radius: 9px;
+    color: white;
+
+    background-color: transparent;
+    border: 2px solid rgba(83, 109, 254, 1);
+    font-size: 18px;
+    border-radius: 9px;
 }
-.hide{
+
+.hide {
     display: none;
 }
-#turnname h1{
+
+#turnname h1 {
     font-size: 20px;
 }
-#turnname h2{
+
+#turnname h2 {
     font-size: 15px;
 }

@@ -61,34 +61,28 @@ function check() {
     ) {
       if (boxes1.innerText === "X") {
         Xscore++;
-       
+
         X.innerHTML = `<span>${Xscore}</span>`;
         fortie();
-       
+
         disable();
-        if(matchno==Matches.value)
-        {
-      winningmsg();
+        if (matchno == Matches.value) {
+          winningmsg();
+        } else {
+          turn.innerHTML = `<h2>Click On Reset button to start another match`;
         }
-        else{
- turn.innerHTML=`<h2>Click On Reset button to start another match`;
-        }
-      
       } else if (boxes1.innerText === "O") {
         Oscore++;
-        
+
         O.innerHTML = `<span>${Oscore}</span>`;
         fortie();
         disable();
-       if(matchno==Matches.value)
-        {
-      winningmsg();
-        }
-         else{
- turn.innerHTML=`<h2>Click On Reset button to start another match`;
+        if (matchno == Matches.value) {
+          winningmsg();
+        } else {
+          turn.innerHTML = `<h2>Click On Reset button to start another match`;
         }
       }
-      
     }
   });
 }
@@ -112,7 +106,7 @@ boxes.forEach((box) => {
     }
     if (stepsX + stepsO == 9) {
       tiesscore++;
-       
+
       Ties.innerHTML = `<span>${tiesscore}</span>`;
     }
     if (stepsX >= 3 || stepsO >= 3) {
@@ -140,52 +134,32 @@ NewGame.addEventListener("click", function () {
   X.innerHTML = `<span>${Xscore}</span>`;
   O.innerHTML = `<span>${Oscore}</span>`;
   Ties.innerHTML = `<span>${tiesscore}</span>`;
-  matchno=1;
+  matchno = 1;
 });
-function winningmsg()
-{   
-    
-    if(Xscore>=tiesscore && Xscore>Oscore)
-    {
-        turn.innerHTML=`<h1>Congratulations, Player X Won The Game</h1>`;
-    }
-    else if(Oscore>Xscore)
-    {
-         turn.innerHTML=`<h1>Congratulations, Player O Won The Game</h1>`;
-      
-    }
-    else{
-         turn.innerHTML=`<h1>Game Draw</h1>`;
-    }
+function winningmsg() {
+  if (Xscore >= tiesscore && Xscore > Oscore) {
+    turn.innerHTML = `<h1>Congratulations, Player X Won The Game</h1>`;
+  } else if (Oscore > Xscore) {
+    turn.innerHTML = `<h1>Congratulations, Player O Won The Game</h1>`;
+  } else {
+    turn.innerHTML = `<h1>Game Draw</h1>`;
+  }
 }
 
 Reset.addEventListener("click", function () {
   if (matchno < Matches.value) {
-   matchno++;
-    
+    matchno++;
+
     toclearbox();
     turnX = true;
     stepsO = 0;
     stepsX = 0;
-    
-
-  }else if(matchno>Matches.value)
-  {
-    turn.innerHTML=`<h2> To Start a New Game Press New Game Button</h2>`;
-  }
-  else{
+  } else if (matchno > Matches.value) {
+    turn.innerHTML = `<h2> To Start a New Game Press New Game Button</h2>`;
+  } else {
     matchno++;
   }
-  
-  
- 
-  
-   
 });
-
- 
- 
-
 
 startgame.addEventListener("click", function () {
   if (Matches.value > 0) {

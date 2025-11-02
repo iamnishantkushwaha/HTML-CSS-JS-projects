@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1>To-Do List</h1>
+        </nav>
+        <div class="filters ">
+            <button id="Active1" class="activated">Active</button>
+            <button id="completed">Completed</button>
+        </div>
+        <div id="input">
+            <div id="Task"><label for="TaskInput">Enter Task</label></div>
+            <div id="Task2"><input type="text" placeholder="Task" id="TaskInput">
+                <button id="addbutton"><i class="ri-add-large-line"></i></button>
+        </div></div>
+          <div id="Tasks">
+          <span><h1 id="notask">No Task</h1> <i class="ri-todo-fill"></i></span>
+          </div>
+          <div id="Tasks2" class="inactive">
+          <span><h1 id="notask">No Task</h1> <i class="ri-todo-fill"></i></span>
+          </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
